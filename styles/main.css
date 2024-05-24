@@ -1,0 +1,22 @@
+.logo{
+    margin-top: 4.6rem;
+    margin-left: 8.7rem;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+}
+
+.main__title{
+    font-size: 64px;
+    line-height: 110%;
+    font-weight: 600;
+}
+
+.main__description{
+    color: var(--dark-electric-blue)
+}
+

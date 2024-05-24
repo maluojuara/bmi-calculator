@@ -1,0 +1,17 @@
+@import url('main.css');
+
+:root{
+    --blue: #345FF6;
+    --gunmetal: #253347;
+    --dark-electric-blue: #5E6E85;
+    --white: #FFFFFF;
+    --main-font: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--gunmetal);
+}

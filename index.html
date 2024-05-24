@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Body Mass Index Calculator</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global-style.css">
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <img class="logo" src="assets/images/logo.svg" alt="Logo">
+  <section class="main">
+    <div class="main__info">
+      <h1 class="main__title">Body Mass Index Calculator</h1>
+      <p class="main__description">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+    </div>
+
+    <div class="main__box">
+      <h2 class="box__title">Enter your details below</h2>
+
+      <div class="box__choose-unit">
+        <input type="radio" name="unit" id="metric" checked>
+        <label for="metric">Metric</label>
+
+        <input type="radio" name="unit" id="imperial">
+        <label for="metric">Imperial</label>
+      </div>
+
+      <div class="box__measure-input">
+        <p>Height</p>
+        <input type="text" id="height" required>
+        <span>cm</span>
+      </div>
+
+      <div class="box__measure-input">
+        <p>Weight</p>
+        <input type="text" id="weight" required>
+        <span>kg</span>
+      </div>
+
+      <div class="box__result">
+        <p>Your BMI is...</p>
+        <p>0</p>
+        <p>Your BMI suggests you're a healthy weight. Your ideal weight is between <strong>63.3kgs - 85.2kgs.</strong></p>
+
+      </div>
+
+    </div>
+  </section>
+  
+
+</body>
+</html>
