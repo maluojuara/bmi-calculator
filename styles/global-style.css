@@ -1,4 +1,5 @@
 @import url('main.css');
+@import url('meaning.css');
 
 :root{
     --blue: #345FF6;

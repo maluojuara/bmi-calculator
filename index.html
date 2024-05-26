@@ -21,14 +21,13 @@
 </head>
 
 <body>
-  <img class="background-rectangle" src="assets/images/Rectangle_6.svg">
   <section class="main">
     <img class="logo" src="assets/images/logo.svg" alt="Logo">
   
     <div class="main__container">
       <div class="main__info">
         <h1 class="main__title">Body Mass Index Calculator</h1>
-        <p class="main__description">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+        <p class="main__description">Better understand your weight in relation to your height using our body mass index (BMI) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
       </div>
 
       <div class="main__box">
@@ -36,34 +35,82 @@
 
         <div class="box__choose-unit">
           <input type="radio" name="unit" id="metric" checked>
-          <label for="metric">Metric</label>
+          <label for="metric" class="choose-unit-label">Metric</label>
 
           <input type="radio" name="unit" id="imperial">
-          <label for="metric">Imperial</label>
+          <label for="imperial" class="choose-unit-label">Imperial</label>
         </div>
 
-        <div class="box__measure-input">
-          <p>Height</p>
-          <input type="text" id="height" required>
-          <span>cm</span>
-        </div>
+        <div class="box__measure-input"> 
 
-        <div class="box__measure-input">
-          <p>Weight</p>
-          <input type="text" id="weight" required>
-          <span>kg</span>
+          <div class="measure-input-height">
+            <label for="weight">Height</label>
+            <div class="input-with-unit">
+              <input type="text" id="height" required>
+              <span>cm</span>
+            </div>
+          </div>
+
+          <div class="measure-input-weight">
+            <label for="weight">Weight</label>
+            <div class="input-with-unit">
+              <input type="text" id="weight" required>
+              <span>kg</span>
+            </div>
+          </div>
+
+
         </div>
 
         <div class="box__result">
-          <p>Your BMI is...</p>
-          <p>0</p>
-          <p>Your BMI suggests you're a healthy weight. Your ideal weight is between <strong>63.3kgs - 85.2kgs.</strong></p>
-
-        </div>
+          <div class="box__result__container">
+            <p class="result-intro">Your BMI is...</p>
+            <p class="result">0</p>
+          </div>
+          <div class="box__result__container">
+            <p class="result-description">Your BMI suggests you're a healthy weight. Your ideal weight is between <span>63.3kgs - 85.2kgs.</span></p>
+          </div>
+        </div>        
 
       </div>
     </div>
   </section>
+
+  <div class="background-rectangle"></div>
+
+  <section class="meaning">
+
+    <div class="meaning__main">
+      <img src="assets/images/image-man-eating.webp" class="meaning__main-img" alt="Man eating">
+
+      <div class="meaning__text">
+        <img src="assets/images/pattern-curved-line-left.svg" class="curved-line-left" alt="Curved Line for decoration">
+        <h3>What your BMI result means</h2>
+        <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
+      </div>
+    </div>
+
+    <ul class="meaning__topics">
+      <li class="topic">
+        <img src="assets/images/icon-eating.svg" alt="Healthy eating">
+        <h4>Healthy eating</h4>
+        <p>Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</p>
+      </li>
+
+      <li class="topic">
+        <img src="assets/images/icon-exercise.svg" alt="Regular exercise">
+        <h4>Regular exercise</h4>
+        <p>Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.</p>
+      </li>
+
+      <li class="topic">
+        <img src="assets/images/icon-sleep.svg" alt="Adequate sleep">
+        <h4>Adequate sleep</h4>
+        <p>Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</p>
+      </li>
+
+    </ul>
+  </section
   
 
 </body>
