@@ -1,5 +1,6 @@
 @import url('main.css');
 @import url('meaning.css');
+@import url('limitations.css');
 
 :root{
     --blue: #345FF6;
