@@ -1,17 +1,22 @@
+.meaning{
+    margin-top: 15rem;
+}
+
 .meaning__main {
     display: flex;
-    margin: 9.4rem 8.7rem 6rem 8.7rem;
     align-items: center;
     gap: 8.1rem;
+    margin: 0 8.7rem 6rem 8.7rem;
 }
 
 .meaning__main-img {
-    width: 40%;
+    width: 55%;
     flex: 1;
 }
 
 .meaning__text{
     flex: 1;
+    padding-bottom: 2.5rem;
 }
 
 .meaning__text h3 {
@@ -35,8 +40,8 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 7.25rem;
-    background: linear-gradient(135deg,rgba(214, 252, 254, 0.25) 0%,rgba(214, 230, 254, 0.25) 100%);
+    padding: 4.5rem 7rem 6rem 7rem;
+    background: linear-gradient(135deg,  rgba(214, 252, 254, 0.1) 0%,rgba(214, 230, 254, 0.3) 100%);
     margin-left: 24px;
     margin-right: 24px;
     border-radius: 35px;

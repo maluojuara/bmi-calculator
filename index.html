@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="styles/global-style.css">
 
   <!-- JavaScript -->
-  <script src="script.js" defer></script>
+  <script src="scripts/metricImperialUI.js" defer></script>
+  <script src="scripts/calculateMetric.js" defer></script>
 </head>
 
 <body>
@@ -34,35 +35,49 @@
         <h2 class="box__title">Enter your details below</h2>
 
         <div class="box__choose-unit">
-          <input type="radio" name="unit" id="metric" checked>
-          <label for="metric" class="choose-unit-label">Metric</label>
+          <div class="choose-unit__option">
+            <input type="radio" name="unit" id="metric" checked>
+            <label for="metric" class="choose-unit-label">Metric</label>
+          </div>
 
-          <input type="radio" name="unit" id="imperial">
-          <label for="imperial" class="choose-unit-label">Imperial</label>
+          <div class="choose-unit__option">
+            <input type="radio" name="unit" id="imperial">
+            <label for="imperial" class="choose-unit-label">Imperial</label>
+          </div>
+
+          
         </div>
 
         <div class="box__measure-input"> 
 
           <div class="measure-input-height">
-            <label for="weight">Height</label>
-            <div class="input-with-unit">
-              <input type="text" id="height" required>
-              <span>cm</span>
+            <label for="height">Height</label>
+            <div class="inputs-box">
+              <div class="input-with-unit">
+                <input type="text" id="height-cm" required>
+                <span id="height-unit">cm</span>
+              </div>
             </div>
           </div>
 
           <div class="measure-input-weight">
             <label for="weight">Weight</label>
-            <div class="input-with-unit">
-              <input type="text" id="weight" required>
-              <span>kg</span>
+            <div class="inputs-box">
+              <div class="input-with-unit">
+                <input type="text" id="weight-kg" required>
+                <span id="weight-unit">kg</span>
+              </div>
             </div>
           </div>
 
-
+        </div>
+        
+        <div class="box__result">
+          <p class="result__welcome">Welcome!</p>
+          <p class="result__instruction">Enter your height and weight and you’ll see your BMI result here</p>
         </div>
 
-        <div class="box__result">
+        <!-- <div class="box__result">
           <div class="box__result__container">
             <p class="result-intro">Your BMI is...</p>
             <p class="result">0</p>
@@ -70,7 +85,7 @@
           <div class="box__result__container">
             <p class="result-description">Your BMI suggests you're a healthy weight. Your ideal weight is between <span>63.3kgs - 85.2kgs.</span></p>
           </div>
-        </div>        
+        </div>         -->
 
       </div>
     </div>
@@ -180,3 +195,9 @@
 
 </body>
 </html>
+
+
+
+
+
+

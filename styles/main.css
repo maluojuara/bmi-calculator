@@ -4,8 +4,9 @@
 
 .main__container {
     display: flex;
-    column-gap: 5.5rem;
+    gap: 5.5rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .main__info{
@@ -40,9 +41,14 @@
 .box__choose-unit{
     display: flex;
     align-items: center;
-    text-align: center;
     margin-bottom: 2rem;
-    column-gap: 24px;
+    gap: 100px;
+}
+
+.choose-unit__option{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .choose-unit-label {
@@ -51,16 +57,14 @@
 
 input[type="radio"] {
     appearance: none;
-    width: 31px;
-    height: 31px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 1px solid var(--dark-electric-blue);
     cursor: pointer;
 }
 
 input[type="radio"]:checked {
-    width: 20px;
-    height: 20px;
     background-color: var(--blue);
     box-shadow: 0px 0px 0px 10px rgba(52, 95, 246, 15%);
 }
@@ -71,6 +75,18 @@ input[type="radio"]:hover {
 
 .box__measure-input{
     display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+
+.measure-input-height, .measure-input-weight, .input-with-unit{
+    flex: 1;
+}
+
+.inputs-box{
+    display: flex;
     gap: 1.5rem;
 }
 
@@ -80,9 +96,12 @@ input[type="radio"]:hover {
 }
 
 .input-with-unit{
+    display: flex;
     border: 1px solid var(--dark-electric-blue);
     border-radius: 12px;
     padding: 20px 24px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .input-with-unit input {
@@ -106,13 +125,23 @@ input[type="radio"]:hover {
     background-color: var(--blue);
     color: var(--white);
     display: flex;
+    flex-direction: column;
     padding: 2rem;
-    align-items: center;
     border-radius: 80px 800px 800px 80px;
     margin-top: 2rem;
+    gap: 1rem;
 }
 
-.box__result__container{
+.result__welcome{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.result__instruction{
+    font-size: 14px;
+}
+
+/* .box__result__container{
     flex: 1;
 }
 
@@ -127,13 +156,13 @@ input[type="radio"]:hover {
 .result {
     font-size: 64px;
     margin-top: 28px;
-}
+} */
 
 .background-rectangle{
     top: 0;
     position: absolute;
     width: 70%;  
-    height: 90%; 
+    height: 85%; 
     background: linear-gradient(135deg,  rgba(214, 252, 254, 0.1) 0%,rgba(214, 230, 254, 100%) 100%);
     border-radius: 0 0 35px 35px;
     margin-left: 1.5rem;  
