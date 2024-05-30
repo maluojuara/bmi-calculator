@@ -1,4 +1,4 @@
-# Frontend Mentor - Body Mass Index Calculator
+<!-- # Frontend Mentor - Body Mass Index Calculator
 
 ![Design preview for the Body Mass Index Calculator coding challenge](./preview.jpg)
 
@@ -24,7 +24,7 @@ Your users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel. -->
 
 ### Expected behaviour
 
