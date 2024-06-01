@@ -1,4 +1,5 @@
 .main{
+    position: relative; 
     margin: 4.6rem 8.7rem 0 8.7rem;
 }
 
@@ -147,16 +148,16 @@ input[type="radio"]:hover {
 }
 
 
-.background-rectangle{
-    top: 0;
-    position: absolute;
-    width: 70%;  
-    height: 85%; 
-    background: linear-gradient(135deg,  rgba(214, 252, 254, 0.1) 0%,rgba(214, 230, 254, 100%) 100%);
-    border-radius: 0 0 35px 35px;
-    margin-left: 1.5rem;  
-    z-index: -1;  
-}
+.background-rectangle {
+    position: absolute; /* Define a posição absoluta para o retângulo de fundo */
+    top: -10rem; /* Ajusta a posição para cima (para que o retângulo fique fora da seção pai) */
+    left: -7rem; /* Ajusta a posição para a esquerda (para que o retângulo fique fora da seção pai) */
+    width: calc(100% + 3rem); /* Define a largura do retângulo */
+    height: calc(100% + 14rem); /* Define a altura do retângulo */
+    background: linear-gradient(135deg, rgba(214, 252, 254, 0.1) 0%, rgba(214, 230, 254, 100%) 100%);
+    border-radius: 0 0 35px 35px; /* Adiciona borda arredondada conforme necessário */
+    z-index: -1; /* Define o índice de empilhamento para estar abaixo do conteúdo */
+  }
 
 
 /* Result show */

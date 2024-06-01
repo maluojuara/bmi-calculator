@@ -19,7 +19,7 @@
   <!-- JavaScript -->
   <script src="scripts/calculateMetric.js" defer></script>
   <script src="scripts/calculateImperial.js" defer></script>
-  <script src="scripts/metricImperialUI.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
             <label for="height">Height</label>
             <div class="inputs-box">
               <div class="input-with-unit">
-                <input type="text" id="height-cm" required maxlength="4">
+                <input type="text" id="height-cm" required maxlength="4" value="0">
                 <span id="height-unit">cm</span>
               </div>
             </div>
@@ -65,7 +65,7 @@
             <label for="weight">Weight</label>
             <div class="inputs-box">
               <div class="input-with-unit">
-                <input type="text" id="weight-kg" required maxlength="5">
+                <input type="text" id="weight-kg" required maxlength="4" value="0">
                 <span id="weight-unit">kg</span>
               </div>
             </div>
@@ -80,9 +80,11 @@
 
       </div>
     </div>
+
+    <div class="background-rectangle"></div>
   </section>
 
-  <div class="background-rectangle"></div>
+  
 
   <section class="meaning">
 
@@ -186,3 +188,5 @@
 
 </body>
 </html>
+
+
