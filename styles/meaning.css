@@ -57,3 +57,65 @@
 .topic p {
     color: var(--dark-electric-blue);
 }
+
+
+/* Responsiviness */
+
+@media screen and (max-width: 1140px) {
+    .curved-line-left{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .meaning {
+        margin-top: 2rem;
+    }
+    .curved-line-left{
+        display: none;
+    }
+
+    .meaning__main{
+        margin-left: 0;
+        margin-right: 2.3rem;
+        margin-top: 6rem;
+        gap: 6.1rem;
+    }
+
+    .meaning__text h3 {
+        font-size: 32px;
+    }
+
+    .meaning__text{ 
+        padding-top: 6rem;
+    }
+
+    .meaning__topics{
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        padding: 3.7rem 3.9rem;
+    }
+
+    .topic{
+        display: flex;
+        column-gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .meaning__main{
+        flex-direction: column;
+        margin: 0;
+        gap: 3rem;
+    }
+
+    .meaning__main-img{
+        width: 100%;    
+    }
+
+    .meaning__text{ 
+        padding: 0 2rem;
+    }
+}

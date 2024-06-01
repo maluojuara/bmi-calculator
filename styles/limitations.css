@@ -15,6 +15,7 @@
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 2.5rem;
+    line-height: 120%;
 }
 
 .limitations__main p {
@@ -28,6 +29,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
+    justify-content: center;
 }
 
 .gender{
@@ -73,4 +75,43 @@
 .topic__text{
     color: var(--dark-electric-blue);
     margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .curved-line-right {
+        display: none;
+    }
+
+    .limitations {
+        position: relative;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 1.5rem;
+        margin: 0;
+        padding: 3.7rem 3.9rem;
+    }
+
+    .limitations__main {
+        grid-column: 1/5;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .limitations__main h3 {
+        font-size: 32px;
+    }
+
+    .gender, .muscle {
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    .age, .pregnancy {
+        grid-column: 3/5;
+    }
+
+    .race{
+        grid-column: 2/4;
+    }
 }
