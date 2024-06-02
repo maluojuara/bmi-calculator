@@ -119,3 +119,13 @@
         padding: 0 2rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .topic {
+        flex-direction: column;
+    }
+
+    .topic img {
+        width: 4rem;
+    }
+}

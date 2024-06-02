@@ -51,13 +51,16 @@ function metricLogic () {
                 <p class="result-description">Your BMI suggests you're a ${bmiRange}. Your ideal weight is between <span>${idealWeight}</span></p>
             </div>`;
 
-        result.style.flexDirection = 'row';
+        
+        window.addEventListener('resize', () => {
+            result.style.flexDirection = window.matchMedia('(max-width: 500px)').matches ? 'column' : 'row';
+            result.style.gap = '2rem';
+        })
 
         if (bmi.toFixed(1).length > 6) {
             result.style.flexDirection = 'column';
             result.style.gap = '2rem';
-            }
-            
+            }     
 
     }
 

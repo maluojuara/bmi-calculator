@@ -26,8 +26,6 @@ function createMetricInputs() {
         </div>
     </div>
     `;
-
-    boxMeasureInput.style.flexDirection = 'row';
     
 }
 
