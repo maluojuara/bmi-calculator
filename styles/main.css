@@ -254,7 +254,7 @@ input[type="radio"]:hover {
     }
 
     .measure-input-height, .measure-input-weight, .input-with-unit{
-        width: 0.8;
+        width: 0.6;
     }
 
     .box__result {
