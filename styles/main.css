@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
-    gap: 6.25rem;
+    gap: 20%;
 }
 
 .choose-unit__option{
@@ -119,14 +119,15 @@ input[type="radio"]:hover {
 }
 
 .input-with-unit input {
+    display: flex;
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--gunmetal);
     border: none; 
     outline: none; 
     box-shadow: none; 
-    width: 6.2rem;
     cursor: text;
+    width: 80%;
 }
 
 .input-with-unit span {
@@ -139,7 +140,7 @@ input[type="radio"]:hover {
     background-color: var(--blue);
     color: var(--white);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 2.4rem;
     border-radius: 80px 800px 800px 80px;
     margin-top: 2rem;
@@ -251,10 +252,6 @@ input[type="radio"]:hover {
     .box__measure-input {
         display: flex;
         flex-direction: column;
-    }
-
-    .measure-input-height, .measure-input-weight, .input-with-unit{
-        width: 0.6;
     }
 
     .box__result {

@@ -51,11 +51,7 @@ function metricLogic () {
                 <p class="result-description">Your BMI suggests you're a ${bmiRange}. Your ideal weight is between <span>${idealWeight}</span></p>
             </div>`;
 
-        
-        window.addEventListener('resize', () => {
-            result.style.flexDirection = window.matchMedia('(max-width: 500px)').matches ? 'column' : 'row';
-            result.style.gap = '2rem';
-        })
+            result.style.flexDirection = 'row';
 
         if (bmi.toFixed(1).length > 6) {
             result.style.flexDirection = 'column';
@@ -66,20 +62,29 @@ function metricLogic () {
 
     // Input
 
-    function isValidInput(value) {
-        return !isNaN(value) && value >= 0;
+    function validateNumericInput(input) {
+        const number = parseFloat(input);
+        if (isNaN(number) || number <= 0 || input.trim() !== number.toString())
+            return false;
+        return true;
     }
 
-    function handleInput() {
-        const heightMetricInput = parseFloat(document.querySelector('#height-cm').value) / 100;
-        const weightMetricInput = parseFloat(document.querySelector('#weight-kg').value);
 
-        if (!isValidInput(heightMetricInput) || !isValidInput(weightMetricInput)) {
-            document.querySelector('.box__result').innerHTML = "<p>Please enter non-negative numbers for all fields.</p>";
+    function handleInput() {
+        const heightMetricInput = document.querySelector('#height-cm').value;
+        const weightMetricInput = document.querySelector('#weight-kg').value;
+        const boxResult = document.querySelector('.box__result');
+
+        if (!(validateNumericInput(heightMetricInput)) || !(validateNumericInput(weightMetricInput))) {
+            boxResult.innerHTML = "<p>Please enter only positive numbers for all fields.</p>";
+            boxResult.style.backgroundColor = 'rgba(242, 30, 132, 0.15)';
+            boxResult.style.color = 'rgba(242, 30, 132';
             return;
         }
     
-        displayBmi(heightMetricInput, weightMetricInput);
+        displayBmi(heightMetricInput / 100, weightMetricInput);
+        boxResult.style.backgroundColor = '#345FF6';
+        boxResult.style.color = '#FFFFFF';
     }
 
     document.querySelector('#height-cm').addEventListener('input', handleInput);

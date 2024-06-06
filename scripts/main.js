@@ -26,6 +26,7 @@ function createMetricInputs() {
         </div>
     </div>
     `;
+    // boxMeasureInput.style.flexDirection = 'row';
     
 }
 
@@ -66,9 +67,7 @@ function createImperialInputs() {
     boxMeasureInput.style.flexDirection = 'column';
 }
 
-function validateNumericInput(input) {
-    return !isNaN(input) && input >= 0;
-}
+
 
 function updateMetricOrImperial() {
     const result = document.querySelector('.box__result');

@@ -52,17 +52,20 @@ function imperialLogic() {
     }
 
     // Input
-    function isValidInput(value) {
-        return !isNaN(value) && value >= 0;
+    function validateNumericInput(input) {
+        const number = parseFloat(input);
+        if (isNaN(number) || number <= 0 || input.trim() !== number.toString())
+            return false;
+        return true;
     }
 
     function handleInput() {
-        const feetInput = parseFloat(document.querySelector('#height-ft').value);
-        const inchesInput = parseFloat(document.querySelector('#height-in').value);
-        const stonesInput = parseFloat(document.querySelector('#weight-st').value);
-        const lbsInput = parseFloat(document.querySelector('#weight-lbs').value);
+        const feetInput = document.querySelector('#height-ft').value;
+        const inchesInput = document.querySelector('#height-in').value;
+        const stonesInput = document.querySelector('#weight-st').value;
+        const lbsInput = document.querySelector('#weight-lbs').value;
 
-        if (!isValidInput(feetInput) || !isValidInput(inchesInput) || !isValidInput(stonesInput) || !isValidInput(lbsInput)) {
+        if (!validateNumericInput(feetInput) || !validateNumericInput(inchesInput) || !validateNumericInput(stonesInput) || !validateNumericInput(lbsInput)) {
             document.querySelector('.box__result').innerHTML = "<p>Please enter non-negative numbers for all fields.</p>";
             return;
         }
